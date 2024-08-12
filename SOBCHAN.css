@@ -9,6 +9,11 @@ body
    margin: 0;
    padding: 0;
 }
+#ClipArt1
+{
+   border-width: 0;
+   vertical-align: top;
+}
 #wb_Image1
 {
    vertical-align: top;
