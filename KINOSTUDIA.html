@@ -10,9 +10,21 @@
 <link href="Untitleed1.css" rel="stylesheet">
 <link href="KINOSTUDIA.css" rel="stylesheet">
 <script src="jquery-3.7.1.min.js"></script>
+<script src="searchindex.js"></script>
+<script src="wb.sitesearch.min.js"></script>
+<script>
+var features = '';
+function searchPage(features)
+{
+   var element = document.getElementById('SiteSearch2');
+   window.open('sitesearch2-results.html?q='+encodeURIComponent(element.value), '', features);
+   return false;
+}
+</script>
 <script>
 $(document).ready(function()
 {
+   searchParseURL('SiteSearch2');
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -22,7 +34,7 @@ $(window).on('load', function()
 </script>
 </head>
 <body>
-<a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb19.png" alt="WYSIWYG Web Builder" style="position:absolute;left:39px;top:1344px;margin: 0;border-width:0;z-index:250" width="16" height="16"></a>
+<a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb19.png" alt="WYSIWYG Web Builder" style="position:absolute;left:39px;top:1344px;margin: 0;border-width:0;z-index:250" width="88" height="31"></a>
 <div id="wb_Image5" style="position:absolute;left:0px;top:664px;width:166px;height:166px;z-index:1;">
 <img src="images/photo_2024-08-12_13-54-13.jpg" id="Image5" alt="" width="166" height="166"></div>
 <div id="wb_Image6" style="position:absolute;left:0px;top:830px;width:166px;height:166px;z-index:2;">
@@ -32,18 +44,23 @@ $(window).on('load', function()
 <div id="wb_Image8" style="position:absolute;left:0px;top:1162px;width:166px;height:166px;z-index:4;">
 <img src="images/photo_2024-08-12_13-54-13.jpg" id="Image8" alt="" width="166" height="166"></div>
 <img src="images/img0002.png" id="MergedObject1" alt="" title="" style="border-width:0;position:absolute;left:0px;top:0px;width:166px;height:664px;z-index:5" width="166" height="664">
-<div id="wb_Image2" style="position:absolute;left:183px;top:1088px;width:320px;height:240px;z-index:6;">
-<img src="images/radejo.gif" id="Image2" alt="" width="320" height="240"></div>
-<div id="wb_Image1" style="position:absolute;left:166px;top:996px;width:100px;height:120px;z-index:7;">
-<img src="images/41.gif" id="Image1" alt="" width="100" height="120"></div>
-<div id="wb_Image3" style="position:absolute;left:249px;top:1006px;width:100px;height:100px;z-index:8;">
-<img src="images/10.gif" id="Image3" alt="" width="100" height="100"></div>
-<div id="wb_Image4" style="position:absolute;left:333px;top:1006px;width:100px;height:100px;z-index:9;">
-<img src="images/22.gif" id="Image4" alt="" width="100" height="100"></div>
-<div id="wb_Image9" style="position:absolute;left:418px;top:996px;width:100px;height:120px;z-index:10;">
-<img src="images/41.gif" id="Image9" alt="" width="100" height="120"></div>
-<div id="wb_Image10" style="position:absolute;left:941px;top:37px;width:231px;height:231px;z-index:11;">
-<img src="images/3dgifmaker40705.gif" id="Image10" alt="" width="261" height="261"></div>
+<div id="wb_ClipArt2" style="position:absolute;left:171px;top:374px;width:379px;height:885px;z-index:6;">
+<img src="images/img0033.png" id="ClipArt2" alt="" width="379" height="885" style="width:379px;height:885px;"></div>
+<div id="wb_ClipArt1" style="position:absolute;left:171px;top:166px;width:379px;height:124px;z-index:7;">
+<img src="images/img0034.png" id="ClipArt1" alt="" width="379" height="124" style="width:379px;height:124px;"></div>
+<div id="wb_ClipArt3" style="position:absolute;left:171px;top:1259px;width:379px;height:61px;z-index:8;">
+<img src="images/img0035.png" id="ClipArt3" alt="" width="379" height="61" style="width:379px;height:61px;"></div>
+<div id="wb_ClipArt4" style="position:absolute;left:171px;top:290px;width:379px;height:166px;z-index:9;">
+<img src="images/img0036.png" id="ClipArt4" alt="" width="379" height="166" style="width:379px;height:166px;"></div>
+<div id="wb_Text3" style="position:absolute;left:184px;top:301px;width:353px;height:39px;text-align:center;z-index:10;">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;">НАШИ ДРУЗЬЯ:<br></span><span style="color:#000000;font-family:'Comic Sans MS';font-size:11px;"><a href="https://t.me/+MRSqpEvjva5lY2Iy">МЕГА ВЕЛИКАЯ ГРУППА ФАНАТОВ ВЕГЕ КЕТС И МЛААТР 1488</a></span></div>
+<div id="wb_ClipArt6" style="position:absolute;left:171px;top:4px;width:379px;height:162px;z-index:11;">
+<img src="images/img0037.png" id="ClipArt6" alt="" width="379" height="162" style="width:379px;height:162px;"></div>
+<div id="wb_Image10" style="position:absolute;left:284px;top:9px;width:153px;height:153px;z-index:12;">
+<img src="images/3dgifmaker40705.gif" id="Image10" alt="" width="153" height="153"></div>
+<form name="SiteSearch2_form" id="SiteSearch2_form" role="search" accept-charset="UTF-8" onsubmit="return searchPage(features)"></form>
+<input type="text" id="SiteSearch2" style="position:absolute;left:209px;top:1273px;width:195px;height:23px;z-index:13;" name="SiteSearch1" value="" spellcheck="false" placeholder="ИСКАТЬ НА САЙТЕ" role="searchbox" form="SiteSearch2_form">
+<input type="button" id="Button2" onclick="searchPage();return false;" name="Search" value="ИСКАТ" style="position:absolute;left:422px;top:1273px;width:96px;height:33px;z-index:14;">
 <div id="preloader"></div>
 </body>
 </html>
