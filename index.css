@@ -271,7 +271,7 @@ body
    box-sizing: border-box;
    float: left;
    padding: 6px 6px 6px 6px;
-   width: 50%;
+   width: 33.33333333%;
    text-align: center;
    vertical-align: top;
 }
@@ -290,5 +290,5 @@ body
 }
 #Blog1 .visible-col3
 {
-   display: none;
+   display: block;
 }
